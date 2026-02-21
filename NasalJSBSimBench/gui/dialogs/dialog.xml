@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ This program is free software; you can redistribute it and/or
+ modify it under the terms of the GNU General Public License as
+ published by the Free Software Foundation; either version 2 of the
+ License, or (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ General Public License for more details.
+-->
+
+<PropertyList>
+
+    <name>bench-dialog</name>
+    <layout>vbox</layout>
+    <resizable>false</resizable>
+    <modal>false</modal>
+    <draggable>true</draggable>
+
+    <group>
+        <layout>hbox</layout>
+        <empty><stretch>true</stretch></empty>
+        <text>
+            <label>Nasal-JSBSim Benchmark</label>
+        </text>
+        <empty><stretch>true</stretch></empty>
+        <button>
+            <legend/>
+            <key>Esc</key>
+            <pref-width>16</pref-width>
+            <pref-height>16</pref-height>
+            <binding>
+                <command>dialog-close</command>
+            </binding>
+        </button>
+    </group>
+
+    <hrule/>
+
+	<group>
+		<layout>hbox</layout>
+		<halign>center</halign>
+		<checkbox>
+			<halign>left</halign>
+			<label>On</label>
+			<property>/addons/by-id/org.flightgear.addons.NasalJSBSimBench/addon-devel/run</property>
+			<live>true</live>
+			<binding>
+				<command>dialog-apply</command>
+			</binding>
+		</checkbox>
+	</group>
+
+	<hrule/>
+
+	<group>
+		<layout>hbox</layout>
+		<default-padding>6</default-padding>
+		<empty><stretch>true</stretch></empty>
+		<button>
+		  <legend>Close</legend>
+		  <equal>true</equal>
+		  <key>Esc</key>
+		  <default>true</default>
+		  <binding>
+			<command>dialog-close</command>
+		  </binding>
+		</button>
+	</group>
+
+</PropertyList>

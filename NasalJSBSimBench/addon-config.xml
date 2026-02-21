@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+    <addon id="org.flightgear.addons.NasalJSBSimBench">
+        <engines>
+          <engine>
+            <name>AddonJSBSimEngine</name>
+            <path>.</path>
+          </engine>
+        </engines>
+        <fdm>   
+            <jsbsim>
+                <debug>true</debug>
+                <fdm-control>
+                    <mode>aircraft</mode>
+                    <addon-model>J3Cub</addon-model>
+                    <root>JSBSim</root>
+                    <path>/media/wayne/TOSHIBA-EXT/Aircraft/Development-Aircraft/J3Cub</path>
+                </fdm-control>
+                <publish>
+                    <property>fcs/aileron-pos-rad</property>
+                    <property>velocities/u-fps</property>
+                    <property>forces/fbx</property>
+                </publish>
+                <!--fdm-control>
+                    <mode>benchmark</mode>
+                    <addon-model>benchmark</addon-model>
+                    <root>JSBSim</root>
+                </fdm-control>
+                <publish>
+                    <property>benchmark/input</property>
+                    <property>benchmark/target</property>
+                    <property>fcs/benchmark/math-output</property>
+                    <property>fcs/benchmark/pid-output</property>
+                    <property>fcs/benchmark/filter-output</property>
+                </publish-->
+                <!--fdm-control>
+                    <disable-default>update</disable-default>
+                    <disable-default>init</disable-default>
+                <fdm-control-->
+            </jsbsim>
+        </fdm>
+    </addon>
+    <addons>
+        <by-id>
+            <org.flightgear.addons.NasalJSBSimBench>
+                <addon-devel>
+                </addon-devel>
+            </org.flightgear.addons.NasalJSBSimBench>
+        </by-id>
+    </addons>
+</PropertyList>
+

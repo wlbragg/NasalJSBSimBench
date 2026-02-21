@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+  <addon>
+    <id>org.flightgear.addons.NasalJSBSimBench</id>
+    <name>org.flightgear.addons.NasalJSBSimBench</name>
+    <version>1.0</version>
+
+    <!-- THIS is where load-order goes -->
+    <load-order>pre-systems</load-order>
+
+  </addon>
+</PropertyList>
