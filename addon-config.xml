@@ -11,7 +11,7 @@
         <fdm>   
             <jsbsim>
                 <debug>true</debug>
-                <fdm-control>
+                <!--fdm-control>
                     <mode>aircraft</mode>
                     <addon-model>J3Cub</addon-model>
                     <root>JSBSim</root>
@@ -21,8 +21,8 @@
                     <property>fcs/aileron-pos-rad</property>
                     <property>velocities/u-fps</property>
                     <property>forces/fbx</property>
-                </publish>
-                <!--fdm-control>
+                </publish-->
+                <fdm-control>
                     <mode>benchmark</mode>
                     <addon-model>benchmark</addon-model>
                     <root>JSBSim</root>
@@ -33,7 +33,7 @@
                     <property>fcs/benchmark/math-output</property>
                     <property>fcs/benchmark/pid-output</property>
                     <property>fcs/benchmark/filter-output</property>
-                </publish-->
+                </publish>
                 <!--fdm-control>
                     <disable-default>update</disable-default>
                     <disable-default>init</disable-default>

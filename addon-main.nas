@@ -13,7 +13,7 @@ var main = func(addon) {
     # initialization
     setlistener("/sim/signals/fdm-initialized", func {
 
-        foreach(var script; ['Nasal\benchmark.nas']) {
+        foreach(var script; ['Nasal/benchmark.nas']) {
             var fname = addon.basePath ~ "/" ~ script;
 
 			print("Nasal file loaded " ~ fname);
